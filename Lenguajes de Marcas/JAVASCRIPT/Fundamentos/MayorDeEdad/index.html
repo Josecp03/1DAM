@@ -1,0 +1,33 @@
+<!--
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MayorDeEdad</title><!--Título de la página-->
+    <link rel="stylesheet" href="../styles/estilos.css"><!--Link para los estilos-->
+</head>
+<body>
+    <!--Script de JavaScript-->
+    <script>
+
+        // Guardar en una variable lo que se introduce por pantalla (Convertido a entero)
+        let edad = parseInt(prompt("Introduzca la edad: "));
+
+        // If y Else para indicar si es mayor de edad o no
+        if (edad > 18) {
+            document.write("<h1>Ya puede conducir</h1>");
+        } else {
+            document.write("<h1>No puede conducir</h1>");
+        }
+        
+    </script>
+</body>
+</html>

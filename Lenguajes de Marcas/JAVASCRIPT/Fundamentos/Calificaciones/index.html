@@ -1,0 +1,48 @@
+<!--
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones</title><!--Título de la página-->
+    <link rel="stylesheet" href="../styles/estilos.css"><!--Link para los estilos-->
+</head>
+<body>
+    <!--Script de JavaScript-->
+    <script>
+
+        // Guardar en una variable lo que se introduce por pantalla
+        let nota = parseInt(prompt("Introduzca su nota: "));
+
+        // Inicializar la variable calificación
+        let calificacion = "";
+
+        // Grupo de If y Else para controlar la calificación
+        if (nota >= 0 && nota <= 3) {
+            calificacion = "Muy Insuficiente";
+        } else if (nota > 3 && nota < 5) {
+            calificacion = "Insuficiente";
+        } else if (nota >= 5 && nota < 6) {
+            calificacion = "Suficiente";
+        } else if (nota >= 6 && nota < 7) {
+            calificacion = "Bien";
+        } else if (nota >= 7 && nota < 9) {
+            calificacion = "Notable";
+        } else if (nota >=9 && nota <=10){
+            calificacion = "Sobresaliente";
+        } else {
+            calificacion = "Nota Incorrecta";
+        }
+
+        // Escribir la calificación
+        document.write("<h1>"+calificacion+"</h1>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!--
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadenas</title><!--Título de la página-->
+    <link rel="stylesheet" href="../styles/estilos.css">
+</head>
+<body>
+    <!--Script de JavaScript--> 
+    <script> 
+        // Inicizalizar la cadena
+        let cadena = ''; 
+
+        // Bucle while que solicita al usuario introducir una cadena de texto hasta que cancele.
+        while (confirm('¿Quieres introducir una cadena de texto?')) {
+            let texto = prompt('Introduce una cadena de texto:');
+            cadena += texto+'-';
+        }
+
+        // Quitar el último guión de la cadena haciendo un SubString
+        cadena = cadena.substring(0, cadena.length - 1);
+
+        // Escribir la cadena
+        document.write("<h1>"+cadena+"</h1>");
+    </script>
+</body>
+</html>

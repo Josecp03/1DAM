@@ -1,0 +1,59 @@
+<!--
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadenas</title><!--Título de la página-->
+    <link rel="stylesheet" href="../styles/estilos.css">
+</head>
+<body>
+    <!--Script de JavaScript--> 
+    <script> 
+        /*
+        ###########################    
+            FUNCIONES DE FLECHA
+        ###########################
+        */
+        // Función de flecha para pedir la cadena al usuario
+        const pedirCadena = () => {    
+            // Inicizalizar la cadena
+            let cadena = ''; 
+
+            // Bucle while que solicita al usuario introducir una cadena de texto hasta que cancele.
+            while (confirm('¿Quieres introducir una cadena de texto?')) {
+                let texto = prompt('Introduce una cadena de texto:');
+                cadena += texto+'-';
+            }
+
+            return cadena;
+        }
+
+        // Función de flecha para quitar el último guión
+        const quitarUltimoGuion = (cadena) => {
+            return cadena.substring(0, cadena.length - 1);
+        }
+        
+        /*
+        ##########################
+            PROGRAMA PRINCIPAL
+        ##########################
+        */
+        // Establecer la cadena 
+        let cadena = pedirCadena();
+
+        // Quitar el último guión de la cadena
+        cadena = quitarUltimoGuion(cadena);
+
+        // Escribir la cadena
+        document.write("<h1>"+cadena+"</h1>");
+    </script>
+</body>
+</html>

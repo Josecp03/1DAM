@@ -1,0 +1,40 @@
+<!--
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadenas</title><!--Título de la página-->
+    <link rel="stylesheet" href="../styles/estilos.css"><!--Link para los estilos-->
+</head>
+<body>
+    <!--Script de JavaScript-->
+    <script>
+
+        // Inicializar la variable suma a 0
+        let suma = 0; 
+
+        // Bucle while para seguir pidiendo cadenas hasta que se indique "Cancelar"
+        while (confirm('¿Quieres introducir una cadena de texto?')) {
+            let numero = parseInt(prompt('Introduce una cadena de texto:'));
+
+            // Filtro para saber si es un número o no
+            if(!isNaN(numero)) {
+                suma += numero;
+            } else {
+                alert("Introduzca un número");
+            }
+        }
+
+        // Escribir el resultado
+        document.write("<h1>"+suma+"</h1>");
+    </script>
+</body>
+</html>

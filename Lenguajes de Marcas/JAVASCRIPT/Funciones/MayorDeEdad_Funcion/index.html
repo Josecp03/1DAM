@@ -1,0 +1,57 @@
+<!--
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MayorDeEdad</title><!--Título de la página-->
+    <link rel="stylesheet" href="../styles/estilos.css"><!--Link para los estilos-->
+</head>
+<body>
+    <!--Script de JavaScript-->
+    <script>
+
+        /*
+        ###########################    
+            FUNCIONES DE FLECHA
+        ###########################
+        */
+        // Función de flecha para pedir la edad del usuario
+        const pedirEdad = () => {
+            let edad;
+            do {
+                edad = parseInt(prompt("Introduzca la edad: "));
+            } while (edad < 0 || edad > 150 || isNaN(edad));
+            return edad;
+        }
+        
+        // Función de flecha para comprobar si el usuario puede conducir o no
+        const puedeConducir = (edad) => {
+            if (edad >= 18) {
+                document.write("<h1>Ya puede conducir</h1>");
+            } else {
+                document.write("<h1>No puede conducir</h1>");
+            }
+        }
+
+        /*
+        ##########################
+            PROGRAMA PRINCIPAL
+        ##########################
+        */
+        // Guardar en una variable la edad introuducida por el usuario
+        let edad = pedirEdad();
+
+        // Establecer si el usuario puede conducir o no
+        puedeConducir(edad);
+
+    </script>
+</body>
+</html>
