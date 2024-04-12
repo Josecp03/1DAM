@@ -1,0 +1,80 @@
+/*
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝*/
+
+body{
+    background-image: url(../imagenes/fondo.png);
+    font-family: tahoma;
+    background-color: #D0D8E9;
+    color: #3B5998;
+    background-repeat: repeat;
+    font-size: 0.85em;
+}
+
+h1{
+    text-align: center;
+}
+
+main p{
+    text-align: justify;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.negritaCursiva{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.cursiva{
+    font-style: italic;
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
+.centrado {
+    text-align: center;
+}
+
+a{
+    color: #3B5998;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    font-style: italic;
+    text-align: center;
+}
+
+ol,ul{
+    text-align: left;
+}
+
+.justificado{
+    text-align: justify;
+}
+
+.formatoEnlace{
+    text-decoration: none; 
+    color: blue;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.formatoEnlaceVisitado{
+    text-decoration: none; 
+    color: #4b0082;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+

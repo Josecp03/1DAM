@@ -1,0 +1,86 @@
+/*
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝*/
+
+h1{
+    color:rgb(33, 126, 95);
+}
+
+.rojoNegrita{
+    font-weight: bold;
+    color: red;
+}
+
+.naranja{
+    color: orange;
+}
+
+h2{
+    color: blue;
+}
+
+.subrayadoRojo{
+    color: red;
+    text-decoration: underline;
+}
+
+.subrayadoRojoLetrasAzules{
+    color: blue;
+    text-decoration: underline red;
+    font-style: italic;
+}
+
+.letrasMoradas{
+    color:#800080;
+}
+
+caption{
+    color:blue;
+}
+
+table,tr,th,td{border:solid 1px #000;}
+
+thead{
+    color: orange;
+}
+
+.negritaNaranja{
+    font-weight: bold;
+    color: orange;
+}
+
+.rojo{
+    color:red;
+}
+
+tbody{
+    color: green;
+}
+
+.cursiva{
+    font-style: italic;
+}
+
+tfoot{
+    color: red;
+    font-weight: bold;
+}
+
+.verde{
+    color: rgb(141, 155, 90)
+}
+
+.morado{
+    color: fuchsia;
+}
+
+.verdeSubrayado{
+    color: green;
+    text-decoration: underline;
+}
+
+

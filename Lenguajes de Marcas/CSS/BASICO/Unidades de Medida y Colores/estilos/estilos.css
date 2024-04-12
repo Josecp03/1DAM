@@ -1,0 +1,71 @@
+/*
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝*/
+
+
+/* CSS CON COLORES */
+
+.rectangulo1
+{
+    width: 250px; height: 35px; 
+    background-color: beige;
+}
+
+.rectangulo2 
+{
+    width: 35%; height: 5%; 
+    background-color: beige;
+}
+
+.rectangulo3 
+{
+    width: 12em; height: 2em; 
+    background-color: beige;
+}
+
+a:visited {
+    color: rgb(253, 6, 6);
+}
+
+a:hover {
+    color: rgb(58%, 0%, 83%);
+    font-weight: bold;
+}
+
+a:active {
+    color: #9ACD32;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1,
+h2 {
+    color: rgba(139, 0, 0, 1);
+}
+
+#recomendamos {
+    font-style: italic
+}
+
+.resaltado {
+    color: #008;
+    font-weight: bold
+}
+
+h1:hover {
+    color: green
+}
+
+ol .resaltado {
+    color: darkmagenta;
+}
+
+div>p {
+    text-indent: 15px
+}
