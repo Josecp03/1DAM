@@ -1,0 +1,25 @@
+<!--
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝-->
+
+<?xml version="1.0" encoding="utf-8"?><!--Esta linea de códio debe de ir la primera para que el código funcione-->
+<!--Ejercicio 2-->
+<articulos><!--Es necesario crear una etiqueta que englobe todas las consolas-->
+    <consola c="Nintendo"><!--Hay que escribir bien el atributo-->
+        <nombre>Nintendo Switch</nombre>
+        <precio p="285$"/>
+    </consola>
+    <consola c="Sony"><!--Hay que escribir bien el atributo-->
+        <nombre>PS5</nombre>
+        <precio p="510$"/><!--Hay que escribir bien el atributo-->
+    </consola>
+    <consola c="Microsoft"><!--Hay que escribir bien el atributo-->
+        <nombre>Xbox Series X</nombre>
+        <precio p="475$"/><!--Hay que escribir bien el atributo-->
+        <alternativa a="Xbox Series S"/><!--Hay que escribir bien el atributo-->
+    </consola>
+</articulos>

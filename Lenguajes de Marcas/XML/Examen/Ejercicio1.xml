@@ -1,0 +1,37 @@
+<!--
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝-->
+
+<?xml version="1.0" encoding="iso-8859-1"?>
+<empresa><!--Creo una etiqueta de empresa que engloba ambos departamentos-->
+    <departamento><!--Creo la tabla del primer departamento-->
+        <nombre>Tecnología</nombre>
+        <ciudad>Talavera de la Reina</ciudad>
+        <jefe></jefe><!--Dejo vacío la etiqueta del jefe, ya que dice en el enunciado que no hay que indicar el nombre del jefe-->
+        <empleado p="director"><!--Creo el atributo puesto-->
+            <nombre>Pepe</nombre>
+            <sueldo>2.000€</sueldo>
+        </empleado>
+        <empleado p="tecnico"><!--Repito el nombre de la etiqueta "empleado" ya que en XML si que se puede-->
+            <nombre>Fernando</nombre>
+            <sueldo>1.500€</sueldo>
+        </empleado>
+    </departamento>
+    <departamento><!--Creo la tabla del segundo departamento-->
+        <nombre>Repostería</nombre>
+        <ciudad>Toledo</ciudad>
+        <jefe></jefe><!--Dejo vacío la etiqueta del jefe, ya que dice en el enunciado que no hay que indicar el nombre del jefe-->
+        <empleado p="director"><!--Creo el atributo puesto-->
+            <nombre>Luis</nombre>
+            <sueldo>3.000€</sueldo>
+        </empleado>
+        <empleado p="cocinero">
+            <nombre>Miguel</nombre>
+            <sueldo>2.000€</sueldo>
+        </empleado>
+    </departamento>
+</empresa>

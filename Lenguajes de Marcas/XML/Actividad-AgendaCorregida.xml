@@ -1,0 +1,35 @@
+<!--
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝-->
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<agenda>
+	<!--Vamos a crear un contacto-->
+	<contactos>
+		<nombre>Alumno</nombre>
+		<Ciudad cp="15500">Ciudad Real</ciudad> <!--En esta linea de codigo lo que esta mal esque una de las etiquetas esta con mayuscula y otra en miunscula-->
+		<teléfono n="612345678"/> <!--El error que hay aqui es que telefono tiene una tilde-->
+		<email>alumno@gmail.com</email>
+		<casado v="no"> <!--Aqui falta una barra para cerrar la etiqueta-->
+		<@AsignaturaPreferida>Matemáticas</@> <!--En esta linea de codigo hay 2 fallos, poner un caracter como el @ dentro de la etiqueta, y falta el nombre de la etiqueta de cierre "AsignaturaPreferida"-->
+	</contactos>
+</agenda>
+
+<!--El codigo correcto seria el siguiente-->
+<?xml version="1.0" encoding="utf-8"?>
+
+<agenda>
+	<contactos>
+		<nombre>Alumno</nombre>
+		<ciudad cp="15500">Ciudad Real</ciudad> 
+		<telefono n="612345678"/> 
+		<email>alumno@gmail.com</email>
+		<casado v="no"/> 
+		<AsignaturaPreferida>Matemáticas</AsignaturaPreferida> 
+	</contactos>
+</agenda>

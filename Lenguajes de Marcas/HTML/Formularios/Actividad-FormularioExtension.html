@@ -1,0 +1,45 @@
+<!--
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de prueba de HTML5</title> <!--Título de la página-->
+</head>
+<body>
+    <form action="" method="get"> <!--action vacío y método get-->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="txtNombre" required><br><br> <!--Campo Nombre obligatorio-->
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correoIntroducido"><br><br> <!--Campo email obligatorio-->
+        <label for="url">URL:</label>
+        <input type="url" id="url" name="urlIntroducida" placeholder="Escribe la URL de tu página" required><br><br> <!--Campo url-->
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fechaSeleccionada"><br><br> <!--Campo date-->
+        <label for="tiempo">Tiempo:</label>
+        <input type="time" id="tiempo" name="tiempoSeleccionado"><br><br> <!--Campo time-->
+        <label for="fechaHora">Fecha y hora:</label>
+        <input type="datetime-local" id="fechaHora" name="fechaHoraIntroducida"><br><br> <!--Campo datetime-->
+        <label for="mes">Mes:</label>
+        <input type="month" id="mes" name="mesSeleccionado"><br><br> <!--Campo month-->
+        <label for="semana">Semana:</label>
+        <input type="week" id="semana" name="semanaSeleccionada"><br><br> <!--Campo week-->
+        <label for="numero">Número (min -10, max 10):</label>
+        <input type="number" id="numero" name="numeroSeleccionado" min="-10" max="10" value="0"><br><br> <!--Campo number-->
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefonoIntroducido" maxlength="9"><br><br><!--Campo tel--><!--Máximo de cracateres posibles=9-->
+        <label for="terminoBusqueda">Término de búsqueda</label>
+        <input type="search" id="terminoBusqueda" name="terminoBusquedaIntroducido"><br><br> <!--Campo search-->
+        <label for="color">Color favorito:</label>
+        <input type="color" id="color" name="colorSeleccionado"><br><br> <!--Campo color-->
+        <input type="submit" name="btnGuardar" value="Enviar"> <!--Botón de Enviar-->
+    </form>
+</body>
+</html>

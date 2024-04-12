@@ -1,0 +1,36 @@
+<!--
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad1_UT2_9</title>
+</head>
+<body>
+    <h3>Rellena tu CV</h3> <!--Título de la página-->
+    <form action="php/insertar_cv.php" method="post"> <!--En este caso es "post" ya que estamos enviando información-->
+        Nombre<br>
+        <input type="text" name="txtNombre" maxlength="30"><br> <!--Cuadro texto-->
+        Apellidos<br>
+        <input type="text" name="txtApllidos" maxlength="80" size="50"><br> <!--Cuadro texto-->
+        Contraseña<br>
+        <input type="password" name="txtPwd" maxlength="10"><br> <!--Cuadro texto-->
+        DNI<br>
+        <input type="text" name="txtDNI" maxlength="9" size="9"><br> <!--Cuadro texto-->
+        Sexo<br> 
+        <input type="radio" name="rbGenero" value="hombre" checked="checked"> Hombre<br> <!--Radiobutton-->
+        <input type="radio" name="rbGenero" value="mujer"> Mujer<br><br> 
+        Incluir mi foto <input type="file" name="fileAdjunto"><br><br> <!--Seleccionar archivo-->
+        <input type="checkbox" name="chkSeleccionado" value="Suscribirme al boletín de novedades" checked="checked"> Suscribirme al boletín de novedades<br><br> <!--Checkbox-->
+        <input type="submit" name="btnGuardar" value="Guardar Cambios"> <!--Botón de Guardar-->
+        <input type="reset" name="rstLimpiar" value="Borrar los datos introducidos"> <!--Botón para resetear los datos-->
+    </form>
+</body>
+</html>

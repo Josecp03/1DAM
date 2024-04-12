@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contacto</title>
+</head>
+<style>
+    /* Estilos para el fondo del cuerpo de la página */
+    body {
+        background-color: #d6cdbf; 
+    }
+
+    /* Estilos para el encabezado de la página */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+    }
+
+     /* Estilos para el pie de página */
+    footer {
+        margin-top: 20px;
+        background-color: #333;
+        color: #fff;
+    }
+
+    /* Estilos para la tabla de navegación */
+    table {
+        margin-top: 20px;
+        background-color: #333;
+    }
+
+    /* Estilos para las filas de encabezado de la tabla */
+    thead {
+        background-color: #333;
+        color: #fff;
+    }
+
+    /* Estilos para las filas de contenido de la tabla */
+    tbody {
+        background-color: #c9bfa5;
+    }
+
+    /* Estilos para el formulario */
+    fieldset {
+        text-align: center;
+        background-color: #c9bfa5;
+        margin: 0 auto;
+        max-width: 600px;
+        border: 2px solid #333;
+    }
+
+     /* Estilos para la leyenda del formulario */
+    legend{
+        margin-top: 20px;
+        background-color: #333;
+        color: #fff;
+    }
+
+    /*Bloquear cuadro de texto de la descripción para que no se pueda mover*/
+    textarea{
+        resize: none
+    }
+</style>
+<body>
+    <header>
+        <!-- Título principal del encabezado -->
+        <h1 align="center">PÁGINA DE CONTACTO</h1>
+    </header>
+    <nav>
+        <table align="center" width="100%"> <!-- Creación de la tabla de navegación -->
+            <thead>
+                <tr> <!--Fila 1-->
+                    <th colspan="2">MENÚ</th>
+                </tr>
+            </thead>  
+            <tbody>
+                <tr> <!--Fila 2-->
+                    <td align="center" width="50%"><a href="../index.html">PÁGINA PRINCIPAL</a></td>
+                    <td align="center" width="50%"><a href="../paginas/curriculum.html">CURRÍCULUM</a></td>
+                </tr> 
+            </tbody>
+        </table>
+        <div>
+            <!-- Párrafo de introducción en el centro de la página -->
+            <p align="center">
+                Estoy encantado de conectarme contigo. Si tienes alguna pregunta, comentario o 
+                simplemente deseas hablar, no dudes en ponerte en contacto conmigo. Estoy disponible para conversar 
+                sobre cualquier asunto que te interese. Completa el formulario de contacto a continuación o utiliza 
+                los datos de contacto proporcionados. ¡Espero saber de ti pronto y trabajar juntos en lo que sea que te apasione!
+            </p>
+        </div>
+        <div>
+            <form>
+            <fieldset>
+                <legend>DATOS</legend>
+                <!-- Etiquetas y cuadros de texto para el formulario -->
+                <label for="nombre">Nombre</label><br>
+                <input type="text" id="nombre" name="txtNombre" size="60" required><br><br>
+                <label for="apellidos">Apellidos</label><br>
+                <input type="text" id="apellidos" name="txtApellidos" size="60" required><br><br> 
+                <label for="correo">Correo electrónico</label><br>
+                <input type="email" id="correo" name="correoIntroducido" size="60" placeholder="correoelectronico@gmail.com" required><br><br> 
+                <label for="dni">DNI</label><br>
+                <input type="text" name="txtDNI" maxlength="9" size="60" required><br><br>
+                <label for="descripción">Motivo del mensaje</label><br>
+                <textarea name="txtdescripción" id="descripción" cols="70" rows="10" required></textarea><br><br> 
+                <input type="checkbox" id="AceptarTérminos" name="chkAceptarTérminos" value="Aceptar Condiciones y Términos de Uso" checked="checked"> Aceptar Términos<br><br>
+                <input type="submit" name="btnGuardar" value="Guardar Cambios"> <!--Botón de Guardar-->
+                <input type="reset" name="rstLimpiar" value="Borrar los datos introducidos"> <!--Botón para resetear los datos-->
+            </fieldset>
+            </form>
+        </div>
+    </nav>
+    <footer align="center">
+        <!-- Pie de página -->
+        <em>Página de Contacto</em>
+    </footer>
+</body>
+</html>

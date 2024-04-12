@@ -1,0 +1,131 @@
+<!--
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Personal</title>
+</head>
+<style>
+    /* Estilos para el fondo del cuerpo de la página*/
+    body {
+        background-color: #d6cdbf; 
+    }
+
+    /* Estilos para el encabezado de la página */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+    }
+
+    /* Estilos para la tabla de navegación */
+    table {
+        margin-top: 20px;
+        background-color: #333;
+    }
+
+    /* Estilos para las filas de encabezado de la tabla */
+    thead {
+        background-color: #333;
+        color: #fff;
+    }
+
+    /* Estilos para las filas de contenido de la tabla */
+    tbody {
+        background-color: #c9bfa5;
+    }
+
+    /* Estilos para centrar el video en la página */
+    .center-video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Estilos para las imágenes */
+    img{
+        margin-top: 22px;
+    }
+
+    /* Estilos para el pie de página */
+    footer {
+        margin-top: 20px;
+        background-color: #333;
+        color: #fff;
+    }
+</style>
+<body>
+    <header>
+        <h1 align="center">PÁGINA WEB PERSONAL</h1><!-- Título principal del encabezado -->
+    </header>
+    <nav>
+        <table align="center" width="100%"><!-- Creación de la tabla de navegación -->
+            <thead>
+                <tr> <!--Fila 1-->
+                    <th colspan="2">MENÚ</th>
+                </tr>
+            </thead>  
+            <tbody>
+                <tr> <!--Fila 2-->
+                    <td align="center" width="50%"><a href="paginas/curriculum.html">CURRÍCULUM</a></td>
+                    <td align="center" width="50%"><a href="paginas/formulario.html">PÁGINA DE CONTACTO</a></td>
+                </tr> 
+            </tbody>
+        </table>
+        <div>
+            <!-- Primera imagen en la página -->
+            <img src="Imagenes/Imagen1.png" alt="Imagen 1" align="right" width="400" height="670">
+        </div>
+        <div>
+            <!-- Sección "ACERCA DE MÍ" -->
+            <h2>ACERCA DE MÍ</h2>
+            <p>
+                Soy un apasionado de la tecnología y un desarrollador web con años de experiencia 
+                en la creación de sitios web atractivos y funcionales. Mi objetivo es combinar diseño 
+                y funcionalidad para ofrecer la mejor experiencia de usuario posible.
+            </p>
+        </div>
+        <div>
+            <!-- Sección "BLOG" -->
+            <h2>BLOG</h2>
+            <p>
+                Me encanta compartir mis pensamientos y conocimientos en mi blog. Aquí, puedes encontrar una 
+                variedad de artículos sobre desarrollo web, diseño, tecnología y más. 
+                ¡No dudes en explorar y dejar tus comentarios!
+            </p>
+        </div>
+        <div>
+            <!-- Sección "CONTACTOS" -->
+            <h2>CONTACTOS</h2>
+            <p>
+                ¿Tienes alguna pregunta o simplemente quieres charlar? Estoy aquí para conectarme contigo. 
+                Puedes contactarme a través de <a href="https://www.google.com/intl/es/gmail/about/" target="_blank">correo@gmail.com</a>
+                o seguirme en las redes sociales: 
+                <ul type="square">
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com/?lang=es" target="_blank">Twitter</a></li>
+                </ul>
+            </p>
+        </div>
+        <div class="center-video">
+            <!-- Reproductor de video centrado en la página -->
+            <video controls width="600" align="center">
+                <source src="Videos/Video1.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video de HTML5
+            </video>
+        </div>
+    </nav> 
+    <footer align="center">
+        <!-- Pie de página -->
+        <em>Página Principal</em>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contacto</title><!--Cambio el título de la página-->
+    <link rel="stylesheet" href="../estilos/estilos.css">
+</head>
+<body>
+    <header><!--Encabezado de la página-->
+        <h1>Contacto</h1><!--Título de la página-->
+    </header>
+    <main><!--Sección principal de la página-->
+        <form><!--Creo el formulario-->
+            <fieldset><!--Creo el cuadro que rodea al formulario-->
+                <legend>Formulario de contacto</legend><!--Añado la leyenda del formulario-->
+                <br><label for="nombre">Nombre(*)</label>
+                <input type="text" name="txtNombre" id="nombre" placeholder="Escribe tu nombre" required><br><br><!--Campo obligatorio-->
+                <label for="correo">Email(*)</label>
+                <input type="email" name="emailCorreo" id="correo" placeholder="Escribe tu Email" required><br><br><!--Campo obligatorio-->
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telTelefono" id="telefono" placeholder="Escribe tu teléfono" maxlength="9"><br><br><!--Introduzco un máximo de 9 caracteres para el teléfono-->
+                <label for="sitioWeb">Sitio web</label>
+                <input type="url" name="urlSitioWeb" id="sitioWeb" placeholder="Escribe la URL de tu web"><br><br>
+                <label for="asunto">Asunto(*)</label>
+                <input type="text" name="txtAsunto" id="asunto" placeholder="Escribe un asunto" required><br><br><!--Campo obligatorio-->
+                <label for="mensaje">Mensaje(*)</label>
+                <textarea name="txtArMensaje" id="mensaje" cols="30" rows="2" placeholder="Deja aquí tu comentario..."></textarea><br><br>
+                <button type="submit" value="guardarDatos"><a href="../paginas/formularioEnviado.html">Enviar</a></button><!--Botón para enviar los datos-->
+                <input type="reset" name="rstBorrar" value="Borrar Todo"><!--Borra todos los datos introducidos-->
+            </fieldset>
+        </form><br>
+        <a href="../index.html"><--Volver a index</a><br><!--Volver a la página principal-->
+    </main>
+    <footer><!--Sección del pie de página-->
+        Este es el footer de la página<br><br>
+        <strong>Alumno: José, Corrochano Pardo</strong><br><br>
+        1ºDAM
+    </footer>
+</body>
+</html>

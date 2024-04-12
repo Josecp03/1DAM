@@ -1,0 +1,76 @@
+<!--
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad2_UT2_8</title>
+    <style>
+        table,
+        td,
+        th {
+            border: solid;
+        }
+        /*Añado que los títulos dentro de la tabla también tengan bordes*/
+    </style>
+</head>
+
+<body>
+    <header> <!--Añado esta etiqueta para dividir el código en diferentes secciones-->
+        <h2>Comparativa de reproductores MP3</h2> <!--Título de la página-->
+    </header>
+    <section> <!--Añado también la etiqueta "<section>" para diferenciar donde esta la tabla-->
+        <table> <!--Creo la tabla-->
+            <caption>Tabla comparativa de las características técnicas de los reproductores MP3</caption> <!--Añado el título de la tabla-->
+            <tr> <!--Fila 1-->
+                <td></td>
+                <th colspan="3"> <!--Hago que la imagen ocupe 3 columnas-->
+                    <p><img src="Imagenes/MP3_Mini.png" alt="Imagen de los MP3 pequeños"></p>
+                    <p><b>MP3 mini</b></p>
+                </th>
+                <th colspan="2"> <!--Hago que la imagen ocupe 2 columnas-->
+                    <p><img src="Imagenes/MP3_Grande.png" alt="Imagen de los MP3 grandes"></p>
+                    <p><b>MP3 grande</b></p>
+                </th>
+            </tr>
+            <tr> <!--Fila 2-->
+                <th>Capacidad de almacenamiento</th> <!--Utilizo la etiqueta "<th>" para que salga en negrita y centrado (En cada una de las siguientes filas de la columna 1)-->
+                <td align="center">4GB<br>&#40;1.000 canciones&#41;</td>
+                <td align="center">8GB<br>&#40;2.000 canciones&#41;</td>
+                <td align="center">16GB<br>&#40;4.000 canciones&#41;</td>
+                <td align="center">30GB<br>&#40;7.500 canciones&#41;</td>
+                <td align="center">80GB<br>&#40;20.000 canciones&#41;</td>
+            </tr>
+            <tr> <!--Fila 3-->
+                <th>Colores</th>
+                <td><img src="Imagenes/Blanco.png" alt="Imagen del color Blanco"></td>
+                <td><img src="Imagenes/CuatroColores.png" alt="Imagen de 4 colores"></td>
+                <td><img src="Imagenes/Negro.png" alt="Imagen del color negro"></td>
+                <td colspan="2"><img src="Imagenes/BlancoNegro.png" alt="Imagen de los colores blanco y negro"></td> <!--Hago que la imagen ocupe 2 columnas-->
+            </tr>
+            <tr> <!--Fila 4-->
+                <th>Pantalla</th>
+                <td colspan="3" align="center">LCD de 3 cm &#40;diagonal&#41; con retroiluminación</td> <!--Hago que el texto ocupe 3 columnas-->
+                <td colspan="2" align="center">LCD de 6 cm &#40;diagonal&#41; con retroiluminación</td> <!--Hago que el texto ocupe 2 columnas-->
+            </tr>
+            <tr> <!--Fila 5-->
+                <th rowspan="2" align="center">Tiempo de carga</th> <!--Hago que el texto ocupe 2 filas-->
+                <td colspan="3" rowspan="2" align="center">Unas 3 horas</td> <!--Hago que el texto ocupe 2 filas y 3 columnas-->
+                <td colspan="2" align="center">Unas 4 horas</td> <!--Hago que el texto ocupe 2 columnas-->
+            </tr>
+            <tr> <!--Fila 6-->
+                <td colspan="2" align="center">Unas 2 horas para alcanzar el 80% de la capacidad</td> <!--Hago que el texto ocupe 2 columnas-->
+            </tr>
+        </table>
+    </section>
+</body>
+
+</html>

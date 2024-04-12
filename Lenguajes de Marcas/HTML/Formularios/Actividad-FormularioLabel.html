@@ -1,0 +1,55 @@
+<!--
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad2_UT2_9</title>
+</head>
+<style>
+    textarea{
+        resize: none
+    }
+    /*Bloquear cuadro de texto de la descripción para que no se pueda mover*/
+</style>
+<body>
+    <h3>Información sobre el producto</h3> <!--Título de la página-->
+    <form action="php/insertar_cv.php" method="post">
+        <fieldset>
+            <legend>Datos básicos</legend>
+            <label for="nombre">Nombre</label><br> <!--Etiqueta "<label>" para poner el nombre del cuadro de texto-->
+            <input type="text" id="nombre" name="txtNombre" size="70"><br><br> <!--Cuadro de texto-->
+            <label for="descripción">Descripción</label><br> 
+            <textarea name="txtdescripción" id="descripción" cols="70" rows="10"></textarea><br><br> <!--Cuadro de texto más amplio-->
+            <label for="foto">Foto</label>
+            <input type="text" name="txtFoto" id="foto" size="15">
+            <input type="file" name="fileFoto"><br><br> <!--Seleccionar Foto-->
+            <input type="checkbox" id="AñadirVisitas" name="chkAñadirVisitas" value="Añadir visitas"> Añadir contador de visitas
+        </fieldset>
+        <fieldset>
+            <legend>Datos económicos</legend>
+            <label for="precio">Precio</label>
+            <input type="text" name="txtPrecio" id="precio" size="3"> €
+            &nbsp;&nbsp;&nbsp;&nbsp; <!--4 espacios en blanco-->
+            <label for="impuestos">Impuestos</label>
+            <select name="selectImp" id="impuestos"> <!--Lista desplegable-->
+                <option value="4%">4%</option>
+                <option value="7%">7%</option>
+                <option value="16%">16%</option>
+                <option value="25%">25%</option>
+            </select><br><br>
+            <label for="rbPromocion">Promoción</label><br>
+            <input type="radio" name="rbPromoción" value="ninguno" checked="checked"> Ninguno<br> <!--Radiobutton-->
+            <input type="radio" name="rbPromoción" value="transporteGratuito"> Transporte Gratuito<br>
+            <input type="radio" name="rbPromoción" value="descuento"> Descuento 5%<br>
+        </fieldset>
+    </form>
+</body>
+</html>
