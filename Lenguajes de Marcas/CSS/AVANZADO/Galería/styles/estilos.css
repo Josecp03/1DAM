@@ -1,0 +1,126 @@
+/*
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝*/
+
+/*Estilos de la página*/
+
+/*Insertar fuente externa*/
+@font-face {
+    font-family: 'lcd';
+    src: url(../fonts/lcd.TTF);
+}
+
+/*Estilos para el body de la página*/
+body{
+    font-family: 'lcd';
+    background-color: #333;
+    color: #6F7B68 ;
+    font-variant: small-caps;
+}
+
+/*Estilos para el contenido principal de la página*/
+main{
+    background-image: url(../img/fondo1.jpg);
+    padding: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    margin-left: 275px;
+    margin-right: 275px;
+    height: 875px;
+}
+
+/*Estilos para la cabecera de la página*/
+.titulo{
+    background-color: #333;
+    color: #B5EB1A;
+    text-align: center;
+    font-size: 2.5em;
+    margin-left: -10px;
+    margin-top: -10px;
+    margin-right: -10px;
+    border-color: #6F7B68;
+    border-style: solid;
+    border-width: 2px;
+    border-right-color: black;
+    margin-bottom: 10px;
+    border-bottom-color: black;
+}
+
+/*Estilo para el título de la página: "Animales Salvajes"*/
+h1{
+    margin: 5px;
+}
+
+/*Borde para las imágenes cortadas*/
+.bordeEspecial{
+    border-bottom: none;
+}
+
+/*Estilo para las imágenes de la página*/
+img{
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+}
+
+/*Estilo para las filas de la página*/
+.fila1,.fila2,.fila3{
+    display: flex;
+}
+
+/*Estilo para los divs de la página*/
+div{
+    background-color: #333;
+    margin-left: -10px;
+    border-color: #6F7B68;
+    border-style: solid;
+    border-width: 2px;
+    border-right-color: black;
+    padding: 10px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-bottom-color: black;
+}
+
+/*Estilo para los párrafos de la página*/
+p{
+    text-align: right;
+    font-size: 1.2rem;
+    margin:-8px;
+    margin-right: 10px;
+}
+
+/*Estilo para las imágenes cortadas*/
+.leon,.jirafa{
+    overflow: hidden;
+    height: 210px;
+}
+
+/*Estilo para mover al rinoceronte*/
+#rinoceronte{
+    position: relative;
+    top: 20px;
+}
+
+/*Estilo para mover al gato*/
+#gato{
+    position: relative;
+    left: 50px;
+}
+
+/*Estilo para mover al águila*/
+#aguila{
+    position: relative;
+    left: 50px;
+}
+
+/*Estilo para mover al perro*/
+#perro{
+    position: relative;
+    bottom: 15px;
+}

@@ -1,0 +1,148 @@
+/*
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝*/
+
+/*Estilos para mi página web en general*/
+body{
+    background-image: url(../img/img01.jpg);
+    font-family: Arial;
+    color: #7F7F81;
+    font-variant: small-caps;
+}
+
+/*Estilos para la cabecera de la página web*/
+header{
+    background-image: url(../img/img02.jpg);
+}
+
+/*Estilos para el menú de navegación de la cabecera*/
+header nav{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+/*Estilos para los enlaces*/
+a{
+    text-decoration: none;
+    color: #7F7F81;
+}
+
+/*Estilos para la clase cabecera*/
+.cabecera{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -25px;
+}
+
+/*Estilos para los títulos h1*/
+h1{
+    color: black;
+    font-weight: normal;
+    font-size: 2em;
+    margin-top: 0px;
+}
+
+/*Estilos para el input*/
+input{
+    padding: 12px;
+    font-weight: bold;
+    border: none;
+    border-bottom: solid 1px black;
+}
+
+/*Estilos para la clase artíulos*/
+.articulos{
+    display: flex;
+    justify-content: center;
+}
+
+/*Estilos para las dos primeras secciones dentro de la seccion artículos*/
+.articulos section{
+    margin: 20px;
+    width: 28%;
+}
+
+/*Estilos para los títulos h2*/
+h2{
+    background-image: url(../img/img03.jpg);
+    font-weight: normal;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+/*Estilos para los párrafos*/
+p{
+    font-variant: normal;
+    text-align: justify;
+}
+
+/*Estilo para las imágenes*/
+img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/*Estilo para la clase negrita*/
+.negrita{
+    font-weight: bold;
+}
+
+/*Estilos para la clase rojo*/
+.rojo{
+    color: red;
+}
+
+/*Estilo para los párrafos dentro del div, dentro del artículo, dentro de la sección que está dentro de la sección artículos */
+.articulos section article div p{
+    font-style: italic;
+    text-align: right;
+    margin: 0px;
+}
+
+/*Estilos para los enlaces que están dentro de un menú de navegación, que está dentro de un artículo, que está dentro de una sección, que está dentro de la sección artículos*/
+.articulos section article nav a{
+    font-variant: normal;
+}
+
+/*Estilos para los artículos que están dentro de una sección, dentro de la sección artículos*/
+.articulos section article{
+    margin-bottom: 50px;
+}
+
+/*Estilos para el pie de página de la web*/
+footer{
+    background-color: #1F1F1F;
+    padding: 20px;
+    color: rgb(207, 198, 198);
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+/*Estilos para los títulos h3*/
+h3{
+    font-weight:normal;
+    margin-bottom: 0px;
+}
+
+/*Estilos para los menú de navegación que están dentro de una sección dentro del pie de página*/
+footer section nav{
+    display: flex;
+    flex-direction: column;
+    font-variant: normal;
+    text-decoration: underline;
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+/*Estilos para los enlaces que están dentro de un menú de navegación, que está dentro de una sección dentro del footer*/
+footer section nav a{
+    color: rgb(207, 198, 198);
+    margin: 2px;
+}

@@ -1,0 +1,167 @@
+/*
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝*/
+
+
+/*Estilos para mi página web*/
+
+/*Importar la fuente mediante un enlace con ruta absoluta*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*Estilos para todos los elementos de mi página web*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Elementos para el cuerpo y el html*/
+html,
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*Estilos para todos los título h1*/
+h1 {
+	font-size: 5rem;
+	font-weight: 400;
+	padding: 10px 0;
+}
+
+/*Estilo para todos los párrafos*/
+p {
+	font-size: 1rem;
+	margin: 20px 0;
+	line-height: 1.7em;
+}
+
+/*Estilos para la clase container*/
+.container {
+	margin: auto;
+	max-width: 1300px;
+	overflow: auto;
+	padding: 0 20px;
+}
+
+/*Estilos para el grid*/
+#grid {
+	padding: 40px 0;
+	height: 100vh;
+}
+
+/*Estilos para el grid-wrapper*/
+.grid-wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+
+/*Estilo para todas las cajas*/
+.caja {
+	padding: 50px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*Estilo para las imágenes que están dentro de las cajas*/
+.box img {
+	width: 100%;
+}
+
+/*Esttilos para las cajas azul oscuro*/
+.caja1,
+.caja4,
+.caja7,
+.caja9 {
+	background: #1a2937;
+}
+
+/*Estilos para las cajas amarillas*/
+.caja2,
+.caja6 {
+	background: #eda640;
+}
+
+/*Estilos para las cajas azul clarito*/
+.caja3,
+.caja5,
+.caja8 {
+	background: #bfcdd9;
+}
+
+/*Estilos para la primera caja*/
+.caja1 {
+	color: #fff;
+	text-align: left;
+	border-radius: 20px;
+	grid-column: 1/3;
+	grid-row: 1/3;
+}
+
+/*Estilos para la segunda caja*/
+.caja2 {
+	grid-column: 3;
+	grid-row: 1;
+}
+
+/*Estilos para la tercera caja*/
+.caja3 {
+	grid-column: 4;
+	grid-row: 1;
+}
+
+/*Estilos para la cuarta caja*/
+.caja4 {
+	grid-column: 3;
+	grid-row: 2;
+}
+
+/*Estilos para la quinta caja*/
+.caja5 {
+	grid-column: 4;
+	grid-row: 2;
+}
+
+/*Estilos para la sexta caja*/
+.caja6 {
+	grid-column: 1;
+	grid-row: 3;
+}
+
+/*Estilos para la séptima caja*/
+.caja7 {
+	grid-column: 2;
+	grid-row: 3;
+}
+
+/*Estilos para la octava caja*/
+.caja8 {
+	grid-column: 3;
+	grid-row: 3;
+}
+
+/*Estilos para la novena caja*/
+.caja9 {
+	grid-column: 4;
+	grid-row: 3;
+}
+
+/*Estilos para todas las cajas menos la primera*/
+.caja2,
+.caja3,
+.caja4,
+.caja5,
+.caja6,
+.caja7,
+.caja8,
+.caja9 {
+	border-radius: 50%;
+	height: 250px;
+	width: 250px;
+}

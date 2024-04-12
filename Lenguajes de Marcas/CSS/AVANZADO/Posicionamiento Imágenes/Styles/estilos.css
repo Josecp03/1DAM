@@ -1,0 +1,91 @@
+/*
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝*/
+
+/*ESTILOS DE LA PÁGINA*/
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    background-image: url(../Images/fondo1.jpg);
+    font-family: Arial Narrow;
+    color: rgb(9,26,61);
+    font-variant: small-caps;
+    margin: 80px 120px;
+}
+
+/* Estilos para la cabecera de la página */
+header{
+    background-color:  rgba(227,232,236,0.5);
+    text-align: center;
+    position: relative;/* Posicionamiento relativo para los elementos secundarios */
+    top: 23px;
+}
+
+/* Estilos para el párrafo dentro del encabezado */
+header p{
+    margin:0;
+    font-size: 21px;
+}
+
+/* Estilos para la sección principal de la página */
+section{
+    background-image: url(../Images/pinzas2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: flex;/* Utiliza un modelo de caja flexible */
+}
+
+/* Estilos para las imágenes dentro de la sección */
+section img{
+    width: 350px;
+    height: 250px;
+    position: relative;/* Posicionamiento relativo para ajustar la posición */
+}
+
+/* Estilos específicos para la imagen con el ID "taza" */
+#taza{
+    z-index: 2;/* Índice de apilamiento para superponer sobre otras imágenes */
+    top: 100px;
+    left: 100px;
+}
+
+/* Estilos específicos para la imagen con el ID "desayuno" */
+#desayuno{
+    z-index: 2;
+    top: 380px;
+    right: 500px
+}
+
+/* Estilos específicos para la imagen con el ID "madera" */
+#madera{
+    z-index: 1;/* Índice de apilamiento inferior */
+    top: 200px;
+    left: 250px;
+   
+}
+
+/* Estilos específicos para la imagen con el ID "té" */
+#té{
+    z-index: 1;
+    top: 150px;
+    left: 20px;
+ 
+}
+
+/* Estilos para el pie de página */
+footer{
+    background-color:  rgba(227,232,236,0.5);
+    text-align: right;
+    position: relative;
+    bottom: 18px;
+}
+
+/* Estilos para el párrafo dentro del pie de página */
+footer p{
+    margin: 0;
+}
