@@ -1,0 +1,37 @@
+<!--
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CajaRegistradora</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+<body>
+    <!--Formulario-->
+    <form>
+        <!--Precio-->
+        <label for="precio">Precio:</label><br>
+        <input id="precio" type="number"><br><br>
+
+        <!--Cantidad-->
+        <label for="cantidad">Cantidad:</label><br>
+        <input id="cantidad" type="number"><br><br>
+
+        <!--Botón Calcular-->
+        <input type="button" id="enviar" value="Calcular"><br><br>
+        
+        <!--Total-->
+        <label for="total">Total:</label><br>
+        <input id="total" readonly>     
+    </form>
+    <script src="js/script.js"></script>
+</body>
+</html>
