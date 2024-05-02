@@ -1,0 +1,8 @@
+Suministros Talavera Talavera tiene:
+	 *Tornillo
+	 *Clavo
+Suministros Torrijos Torrijos tiene:
+	 *Arandela
+Ferreteria Ribera Talavera tiene:
+	 *Chinchetas
+	 *Martillo

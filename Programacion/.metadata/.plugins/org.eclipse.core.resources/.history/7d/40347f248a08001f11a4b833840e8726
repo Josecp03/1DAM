@@ -1,0 +1,13 @@
+package fechas;
+
+import java.time.*;
+
+public class EjemplosFechas {
+
+	public static void main(String[] args) {
+		LocalDate hoy = LocalDate.now();
+		System.out.println(hoy);
+		LocalTime ahora = LocalTime.now();
+	}
+
+}

@@ -1,0 +1,11 @@
+package examenGimnasio;
+
+public class Clase {
+
+	private int dia;
+	private String mes;
+	private int año;
+	private String codClase;
+	private int hora;
+	
+}

@@ -1,0 +1,122 @@
+package examenFruteria;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.io.*;
+
+public class Empleado extends Persona {
+	
+	// Atributos
+	private int turno;
+	private ArrayList<Pedido>pedidosAsignados;
+	
+	// Constructor con todos los parámetros
+	public Empleado(String dni, String nombre, String apellidos, String direccion, int turno,
+			ArrayList<Pedido> pedidosAsignados) {
+		super(dni, nombre, apellidos, direccion);
+		this.turno = turno;
+		this.pedidosAsignados = pedidosAsignados;
+	}
+	
+	// Constructor con todos los parámetros menos el AL
+	public Empleado(String dni, String nombre, String apellidos, String direccion, int turno) {
+		super(dni, nombre, apellidos, direccion);
+		this.turno = turno;
+		this.pedidosAsignados = new ArrayList<Pedido>();
+	}
+	
+	// Constructor por defecto
+	public Empleado() {
+		super();
+		this.turno = 0;
+		this.pedidosAsignados = new ArrayList<Pedido>();
+	}
+
+	// Getters y Setters	
+	public int getTurno() {
+		return turno;
+	}
+
+	public void setTurno(int turno) {
+		this.turno = turno;
+	}
+
+	public ArrayList<Pedido> getPedidosAsignados() {
+		return pedidosAsignados;
+	}
+
+	public void setPedidosAsignados(ArrayList<Pedido> pedidosAsignados) {
+		this.pedidosAsignados = pedidosAsignados;
+	}
+
+	// ToString
+	@Override
+	public String toString() {
+		return "Empleado [turno=" + turno + ", pedidosAsignados=" + pedidosAsignados + ", dni=" + dni + ", nombre="
+				+ nombre + ", apellidos=" + apellidos + ", direccion=" + direccion + "]";
+	}
+	
+	// Método cargar pedidos
+	public void asignarPedidosTurno() {
+		String cadena;
+        String[] linea;
+        try {
+        	Scanner entrada=new Scanner(new File("pedidos.csv"));
+        	entrada.nextLine();
+        	while(entrada.hasNext()) {
+        		cadena=entrada.nextLine();
+        		linea=cadena.split(";");
+        		if (linea[3].equals(String.valueOf(this.getTurno()))) {
+        			this.getPedidosAsignados().add(new Pedido(Integer.parseInt(linea[0]), linea[1], Double.parseDouble(linea[2]), Integer.parseInt(linea[3])));
+        		}
+        	}
+		} catch (FileNotFoundException e) {
+			System.err.println("Fichero no encontrado");
+			e.printStackTrace();
+		}
+	}
+	
+	// Método para generar las facturas
+	public void generarFactura(Pedido p) {
+		try {
+			PrintWriter salida = new PrintWriter(new File(p.getDniCliente()+".txt"));
+			Factura f = new Factura();
+			f.setProductosPedidos(f.cargarProductos());
+			f.setCodigoFactura(p.getCodigoPedido()+"_"+p.getDniCliente());
+			f.setCodigoPedido(p.getCodigoPedido());
+			f.setDniCliente(p.getDniCliente());
+			f.setTotal(f.totalSinIVA()+f.ivaReducido()-p.getDescuento());
+			String cadena="";
+			cadena += "Factura : "+f.getCodigoFactura()+"\n";
+			cadena += "Cliente : "+f.getDniCliente()+"\n";
+			cadena += "***************Productos***************\n";
+			int contador = 0;
+			for (ProductoPedido pe : f.getProductosPedidos()) {
+				cadena += contador+"\t"+pe.getNombreProducto()+"\t"+pe.getPrecioKg()+"€/kg\t"+pe.getKg()+"Kg\n";
+			}
+			
+			salida.print(cadena);
+			salida.flush();
+			salida.close();
+			return f;
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	public static void main(String[] args) {
+		BD bd = BD.getInstance();
+		
+        ArrayList<Empleado> empleados = bd.cargaEmpleados();
+        
+        for (Empleado e : empleados) {
+        	e.asignarPedidosTurno();
+        	System.out.print(e.getNombre()+": \n");
+			for (Pedido p : e.getPedidosAsignados()) {
+				System.out.println("\t"+p);
+			}
+		}
+	}
+	
+}

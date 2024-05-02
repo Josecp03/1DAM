@@ -1,0 +1,8 @@
+package examenGimnasio;
+
+public class Clase {
+
+	private int dia;
+	private String mes;
+	
+}

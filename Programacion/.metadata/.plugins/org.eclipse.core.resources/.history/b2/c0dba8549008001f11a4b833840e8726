@@ -1,0 +1,8 @@
+package examenGimnasio;
+
+public class Gerente extends Persona {
+
+	// Atributos
+	private String telefono;
+	
+}

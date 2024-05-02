@@ -1,0 +1,8 @@
+package examenGimnasio;
+
+public class Persona {
+
+	// Atributos
+	private String dni;
+	
+}

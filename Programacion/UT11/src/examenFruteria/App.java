@@ -1,0 +1,66 @@
+package examenFruteria;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		ArrayList<Empleado> emple;
+		emple = BD.getInstance().cargaEmpleados();
+		Factura f = new Factura();
+		int cont = 0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("DIGAME EL DNI DEL EMPLEADO: ");
+		String dni = sc.next();
+		System.out.println();
+		
+		if(dni.equals(args[0])) {
+			for (Empleado empleado : emple) {
+				if(empleado.getDni().equals(dni)) {
+					empleado.asignarPedidosTurno();
+					for (Pedido p : empleado.getPedidosAsignados()) {
+						cont++;
+						System.out.println(p.getCodigoPedido()+"_"+p.getDniCliente());
+						f = empleado.generarFactura(p);
+				        BD.getInstance().consultaBD("Insert into FACTURA values('"+f.getCodigoFactura()+"', "+f.getCodigoPedido()+", '"+f.getDniCliente()+"', "+f.getTotal()+")");
+				        BD.getInstance().cerrarConsulta();
+					}
+					System.out.println("El empleado "+empleado.getNombre()+" con DNI: "+empleado.getDni()+" tiene "+cont+" pedidos");
+					cont = 0;
+				}
+			}
+		}else if(dni.equals(args[1])) {
+			for (Empleado empleado : emple) {
+				if(empleado.getDni().equals(dni)) {
+					empleado.asignarPedidosTurno();;
+					for (Pedido p : empleado.getPedidosAsignados()) {
+						cont++;
+						System.out.println(p.getCodigoPedido()+"_"+p.getDniCliente());
+						f = empleado.generarFactura(p);
+				        BD.getInstance().consultaBD("Insert into FACTURA values('"+f.getCodigoFactura()+"', "+f.getCodigoPedido()+", '"+f.getDniCliente()+"', "+f.getTotal()+")");
+				        BD.getInstance().cerrarConsulta();
+					}
+					System.out.println("El empleado "+empleado.getNombre()+" con DNI: "+empleado.getDni()+" tiene "+cont+" pedidos");
+					cont = 0;
+				}
+			}
+		}else {
+			for (Empleado empleado : emple) {
+				empleado.asignarPedidosTurno();;
+				for (Pedido p : empleado.getPedidosAsignados()) {
+					cont++;
+					System.out.println(p.getCodigoPedido()+"_"+p.getDniCliente());
+					f = empleado.generarFactura(p);
+					double total = f.getTotal();
+			        BD.getInstance().consultaBD("Insert into FACTURA values('"+f.getCodigoFactura()+"', "+f.getCodigoPedido()+", '"+f.getDniCliente()+"', "+f.getTotal()+")");
+			        BD.getInstance().cerrarConsulta();
+				}
+				System.out.println("El empleado "+empleado.getNombre()+" con DNI: "+empleado.getDni()+" tiene "+cont+" pedidos");
+				cont = 0;
+			}
+		}
+
+	}
+
+}

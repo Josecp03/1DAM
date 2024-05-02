@@ -1,0 +1,12 @@
+package examenGimnasio;
+
+import java.util.ArrayList;
+
+public class Monitor extends Persona{
+
+	// Atributos
+	private int codigoMonitor;
+	private String clave;
+	private ArrayList<Clase>clasesImpartidas;
+	
+}

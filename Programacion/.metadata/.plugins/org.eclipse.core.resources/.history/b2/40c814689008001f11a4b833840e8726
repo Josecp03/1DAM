@@ -1,0 +1,20 @@
+package examenGimnasio;
+
+public class Gerente extends Persona {
+
+	// Atributos
+	private String telefono;
+
+	// Constructor con todos los parámetros
+	public Gerente(String dni, String nommbre, String apellidos, String correo, String telefono) {
+		super(dni, nommbre, apellidos, correo);
+		this.telefono = telefono;
+	}
+	
+	// Constructor por defecto
+	public Gerente(String dni, String nommbre, String apellidos, String correo, String telefono) {
+		super(dni, nommbre, apellidos, correo);
+		this.telefono = telefono;
+	}
+	
+}

@@ -1,0 +1,20 @@
+package examenGimnasio;
+
+public class Persona {
+
+	// Atributos
+	private String dni;
+	private String nommbre;
+	private String apellidos;
+	private String correo;
+	
+	// Constructor con todos los parámetros
+	public Persona(String dni, String nommbre, String apellidos, String correo) {
+		this.dni = dni;
+		this.nommbre = nommbre;
+		this.apellidos = apellidos;
+		this.correo = correo;
+	}
+	
+	
+}

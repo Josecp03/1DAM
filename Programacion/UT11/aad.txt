@@ -1,0 +1,13 @@
+Factura : 2_aad
+Cliente : aad
+***************Productos***************
+0	Aguacate	5.98€/kg	3.0Kg
+0	Papaya		5.22€/kg	4.0Kg
+0	Guayabas	4.88€/kg	5.0Kg
+0	Aguacate	5.98€/kg	5.0Kg
+0	Guayabas	4.88€/kg	2.0Kg
+0	Chirimoya	5.44€/kg	3.0Kg
+0	Aguacate	5.98€/kg	6.0Kg
+0	Chirimoya	5.44€/kg	3.0Kg
+0	Aguacate	5.98€/kg	2.0Kg
+0	Chirimoya	5.44€/kg	3.0Kg

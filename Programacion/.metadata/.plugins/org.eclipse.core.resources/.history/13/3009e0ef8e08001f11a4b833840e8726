@@ -1,0 +1,9 @@
+package examenGimnasio;
+
+public class Monitor {
+
+	// Atributos
+	private int codigoMonitor;
+	private String clave
+	
+}

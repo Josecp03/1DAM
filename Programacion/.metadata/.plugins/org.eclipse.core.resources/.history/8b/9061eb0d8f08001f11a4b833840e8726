@@ -1,0 +1,10 @@
+package examenGimnasio;
+
+public class Monitor extends Persona{
+
+	// Atributos
+	private int codigoMonitor;
+	private String clave;
+	 
+	
+}

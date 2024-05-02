@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;videoClub&apos; to &apos;UT7/src&apos;&#x0D;&#x0A;- Original project: &apos;UT6&apos;&#x0D;&#x0A;- Destination element: &apos;UT7/src&apos;&#x0D;&#x0A;- Original element: &apos;UT6/src/videoClub&apos;" description="Copy package" destination="=UT7/src" element1="/src&lt;videoClub" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1706193914223" version="1.0"/>
+</session>

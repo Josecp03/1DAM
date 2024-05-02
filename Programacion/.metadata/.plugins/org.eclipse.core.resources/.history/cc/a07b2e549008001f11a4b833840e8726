@@ -1,0 +1,7 @@
+package examenGimnasio;
+
+public class Gerente extends Persona {
+
+	// Atributos
+	private 
+}

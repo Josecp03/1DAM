@@ -1,0 +1,73 @@
+[
+  {
+    "nombre": "Mora",
+    "edad": 27,
+    "pais": "Puerto Rico",
+    "oyentes": 20,
+    "canciones": "Desaparecer, Calentón, 512"
+  },
+  {
+    "nombre": "Bad Bunny",
+    "edad": 30,
+    "pais": "Puerto Rico",
+    "oyentes": 67,
+    "canciones": "Chambea, Dime Si Te Acuerdas, Como Antes"
+  },
+  {
+    "nombre": "Eladio Carrión",
+    "edad": 29,
+    "pais": "Estados Unidos",
+    "oyentes": 20,
+    "canciones": "3 Am, Kemba Walker, Progreso"
+  },
+  {
+    "nombre": "Paulo Londra",
+    "edad": 25,
+    "pais": "Argentina",
+    "oyentes": 12,
+    "canciones": "Tal Vez, Adan y Eva, Forever Alone"
+  },
+  {
+    "nombre": "Dei V",
+    "edad": 28,
+    "pais": "Puerto Rico",
+    "oyentes": 15,
+    "canciones": "Diamonds, Perreo Lento, Trending"
+  },
+  {
+    "nombre": "Saiko",
+    "edad": 21,
+    "pais": "España",
+    "oyentes": 15,
+    "canciones": "Polaris, Cafe Malibú, Cosas Que No Te Dije"
+  },
+  {
+    "nombre": "Quevedo",
+    "edad": 22,
+    "pais": "España",
+    "oyentes": 29,
+    "canciones": "Donde Quiero Estar, Ahora Y Siempre, Piel de Cordero"
+  },
+  {
+    "nombre": "Jayco",
+    "edad": 30,
+    "pais": "Puerto Rico",
+    "oyentes": 28,
+    "canciones": "No me Conoce, Fantasma, Como Se Siente"
+  },
+  {
+    "nombre": "Don Omar",
+    "edad": 46,
+    "pais": "Puerto Rico",
+    "oyentes": 36,
+    "canciones": "Salió El Sol, Danza Kuduro, Dile"
+  },
+  {
+    "nombre": "Darell",
+    "edad": 34,
+    "pais": "Puerto Rico",
+    "oyentes": 18,
+    "canciones": "Asesina, Velitas, Mi Peor Error"
+  }
+]
+

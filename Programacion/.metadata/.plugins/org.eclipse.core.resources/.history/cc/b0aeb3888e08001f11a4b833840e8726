@@ -1,0 +1,9 @@
+package examenGimnasio;
+
+public class Cliente extends Persona{
+	
+	// Atributos
+	private String metodoPago;
+	
+	
+}
