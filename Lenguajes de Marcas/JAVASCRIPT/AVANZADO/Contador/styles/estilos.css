@@ -1,0 +1,87 @@
+/*
+░░░░░██╗░█████╗░░██████╗███████╗
+░░░░░██║██╔══██╗██╔════╝██╔════╝
+░░░░░██║██║░░██║╚█████╗░█████╗░░
+██╗░░██║██║░░██║░╚═══██╗██╔══╝░░
+╚█████╔╝╚█████╔╝██████╔╝███████╗
+░╚════╝░░╚════╝░╚═════╝░╚══════╝*/
+
+/*Estilos para el body*/
+body {
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/fondoGris.jpg);
+    background-size: cover;
+}
+
+.cajaContador {
+    background-color: rgb(61, 62, 66);
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.cajaBotones {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.cajaBotones div {
+    margin: 2%;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 300%;
+    color: white;
+}
+
+#numero {
+    font-size: 250%;
+    color: white;
+}
+
+#menos {
+    background-color: red;
+    width: 85px;
+}
+
+#reset {
+    background-color: grey;
+    width: 200px;
+}
+
+#mas {
+    background-color: green;
+    width: 85px;
+}
+
+.cajaBotones div p {
+    font-weight: bold;
+    font-size: 200%;
+}
+
+
+#menos:hover, #reset:hover, #mas:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
